@@ -1,6 +1,8 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import { MOVIE_LIST } from "./components/molecules/MovieList/constant";
+import { Provider } from "react-redux";
+import configureStore from "./store";
 import App from "./App";
 
 // let container: any = null;
@@ -17,7 +19,11 @@ import App from "./App";
 
 it("Initial Render", () => {
   act(() => {
-    render(<App />);
+    render(
+      <Provider store={configureStore()}>
+        <App />
+      </Provider>
+    );
   });
 
   const headerTitle = screen.getByTestId("header-title").textContent;
@@ -37,7 +43,11 @@ it("Initial Render", () => {
 
 it("Click movie item", () => {
   act(() => {
-    render(<App />);
+    render(
+      <Provider store={configureStore()}>
+        <App />
+      </Provider>
+    );
   });
 
   const selectedMovieIndex = 2;
