@@ -1,9 +1,9 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
-import { MOVIE_LIST } from "./components/molecules/MovieList/constant";
+import { MOVIE_LIST } from "../components/molecules/MovieList/constant";
 import { Provider } from "react-redux";
-import configureStore from "./store";
-import App from "./App";
+import configureStore from "../store";
+import App from "../App";
 
 // let container: any = null;
 // beforeEach(() => {
