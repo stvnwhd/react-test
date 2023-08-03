@@ -29,8 +29,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage",
+    "test": "react-scripts test --env=jsdom --coverage --watchAll",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": ["src/index.tsx", "src/context/MovieCtx.tsx"]
   },
   "browserslist": [
     ">0.2%",
