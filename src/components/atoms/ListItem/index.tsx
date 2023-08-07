@@ -12,7 +12,7 @@ const ListItem: FC<ListItemPropTypes> = ({
   itemID,
   label,
   isActive,
-  onClick = () => {}
+  onClick,
 }) => {
   return (
     <li

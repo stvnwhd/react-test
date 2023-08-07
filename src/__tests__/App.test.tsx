@@ -5,18 +5,6 @@ import { Provider } from "react-redux";
 import configureStore from "../store";
 import App from "../App";
 
-// let container: any = null;
-// beforeEach(() => {
-//   container = container.createElement("div");
-//   document.body.appendChild(container);
-// });
-
-// afterEach(() => {
-//   unmountComponentAtNode(container);
-//   container.remove();
-//   container = null;
-// });
-
 it("Initial Render", () => {
   act(() => {
     render(
